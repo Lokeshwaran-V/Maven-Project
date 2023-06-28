@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 	%c{1} = Used to output the category of the logging event. Package name + class name.
+		%L = Used to output the line number from where the logging request was issued.
+		%d = Date format.
+		%m = Used to output the message associated with the logging event.
+		%n = Line separator.
+		%-5p = The priority of the logging event should be left justified to a width of five characters.-->
+		
+<Configuration status="warn">
+	<Properties>
+		<Property name="filelocation">C:\\Users\\sudha\\eclipse-workspace\\Project1\\logs</Property>
+	</Properties>
+
+	<Appenders>
+		<Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%c{1}:%L - %d{dd-MM-yyyy - HH:mm:ss} - %-5p - %m%n"/>
+        </Console>
+		<File name="LogToFile" fileName="${filelocation}\\log4j2.log">
+			<PatternLayout pattern="%c{1}:%L - %d{dd-MM-yyyy - HH:mm:ss} - %-5p - %m%n"/>
+		</File>
+	</Appenders>
+	<Loggers>
+				
+		<Root level="trace">
+			<Appender-ref ref="LogToConsole" />
+			<Appender-ref ref="LogToFile" />
+		</Root>
+	</Loggers>
+</Configuration>

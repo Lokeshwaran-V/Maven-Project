@@ -1,0 +1,6 @@
+CollectLog:28 - 28-06-2023 - 15:14:51 - TRACE - Trace log Message
+CollectLog:29 - 28-06-2023 - 15:14:51 - DEBUG - Debug log Message
+CollectLog:30 - 28-06-2023 - 15:14:51 - INFO  - Info log Message
+CollectLog:31 - 28-06-2023 - 15:14:51 - WARN  - Warn log Message
+CollectLog:32 - 28-06-2023 - 15:14:51 - ERROR - Error log Message
+CollectLog:33 - 28-06-2023 - 15:14:51 - FATAL - Fatal log Message
